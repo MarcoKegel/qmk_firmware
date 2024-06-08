@@ -22,3 +22,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define OLED_FONT_H "lib/glcdfont_lily.c"
 
 #define SPLIT_USB_DETECT
+
+// Pick good defaults for enabling homerow modifiers
+#define TAPPING_TERM 200
+#define PERMISSIVE_HOLD
+#define QUICK_TAP_TERM 0
