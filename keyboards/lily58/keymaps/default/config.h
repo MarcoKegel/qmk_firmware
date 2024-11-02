@@ -46,9 +46,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
 
-// Underglow
-/*
+// Underglow https://kriscables.com/lily58-rgb-underglow-backlighting/
+
 #undef RGBLIGHT_LED_COUNT
-#define RGBLIGHT_LED_COUNT 14    // Number of LEDs
+#define RGBLIGHT_LED_COUNT 1    // Number of LEDs
+#define RGBLED_SPLIT { 1, 1 }
 #define RGBLIGHT_SLEEP
-*/
+
