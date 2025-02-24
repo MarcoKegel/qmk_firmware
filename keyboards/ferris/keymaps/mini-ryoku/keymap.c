@@ -1,5 +1,28 @@
 #include QMK_KEYBOARD_H
 
+const uint16_t PROGMEM combo_LPRN[] = {LALT_T(KC_R), LCTL_T(KC_S), COMBO_END};
+const uint16_t PROGMEM combo_RPRN[] = {LCTL_T(KC_S), LSFT_T(KC_T), COMBO_END};
+const uint16_t PROGMEM combo_LCBR[] = {KC_W, KC_F, COMBO_END};
+const uint16_t PROGMEM combo_RCBR[] = {KC_F, KC_P, COMBO_END};
+const uint16_t PROGMEM combo_LBRC[] = {KC_X, KC_C, COMBO_END};
+const uint16_t PROGMEM combo_RBRC[] = {KC_C, KC_D, COMBO_END};
+
+const uint16_t PROGMEM combo_BSLS[] = {KC_Y, KC_QUOT, COMBO_END};
+const uint16_t PROGMEM combo_SCLN[] = {RALT_T(KC_I), RGUI_T(KC_O), COMBO_END};
+
+combo_t key_combos[] = {
+    COMBO(combo_LPRN, KC_LPRN), // (
+    COMBO(combo_RPRN, KC_RPRN), // )
+    COMBO(combo_LCBR, KC_LCBR), // {
+    COMBO(combo_RCBR, KC_RCBR), // }
+    COMBO(combo_LBRC, KC_LBRC), // [
+    COMBO(combo_RBRC, KC_RBRC), // ]
+    
+    COMBO(combo_BSLS, KC_BSLS), // "\"
+    COMBO(combo_SCLN, KC_SCLN), // :
+    
+};
+
 // ##################################################
 // Keymap
 // ##################################################
