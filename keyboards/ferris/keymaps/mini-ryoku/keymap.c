@@ -8,7 +8,7 @@ const uint16_t PROGMEM combo_LBRC[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM combo_RBRC[] = {KC_C, KC_D, COMBO_END};
 
 const uint16_t PROGMEM combo_BSLS[] = {KC_Y, KC_QUOT, COMBO_END};
-const uint16_t PROGMEM combo_SCLN[] = {RALT_T(KC_I), RGUI_T(KC_O), COMBO_END};
+const uint16_t PROGMEM combo_SCLN[] = {LALT_T(KC_I), LGUI_T(KC_O), COMBO_END};
 
 combo_t key_combos[] = {
     COMBO(combo_LPRN, KC_LPRN), // (
@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_split_3x5_2(   KC_Q, KC_W, KC_F, KC_P, KC_B,                                               KC_J, KC_L, KC_U, KC_Y, KC_QUOT, 
                                 LGUI_T(KC_A), LALT_T(KC_R), LCTL_T(KC_S), LSFT_T(KC_T), KC_G,               KC_M, LSFT_T(KC_N), LCTL_T(KC_E), LALT_T(KC_I), LGUI_T(KC_O), 
                                 KC_Z, KC_X, KC_C, KC_D, KC_V,                                               KC_K, KC_H, KC_COMM, KC_DOT, KC_SLSH, 
-                                LT(1,KC_TAB), LT(2,KC_SPC),                                                 LT(2,KC_ENT), LT(1,KC_BSPC)),
+                                LT(1,KC_SPC), LT(2,KC_TAB),                                                 LT(2,KC_ENT), LT(1,KC_BSPC)),
     // Navigation
     [1] = LAYOUT_split_3x5_2(   KC_ESC, LCTL(KC_X), LCTL(KC_C), LCTL(KC_V), KC_NO,                          KC_INS, KC_HOME, KC_UP, KC_END, KC_PGUP, 
                                 LGUI_T(KC_NO), LALT_T(KC_NO), LCTL_T(KC_NO), LSFT_T(KC_NO), KC_NO,          KC_DEL, RSFT_T(KC_LEFT), RCTL_T(KC_DOWN), RALT_T(KC_RGHT), RGUI_T(KC_PGDN), 
