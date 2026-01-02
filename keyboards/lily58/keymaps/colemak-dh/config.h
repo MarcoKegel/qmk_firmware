@@ -21,10 +21,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 /* Select hand configuration */
-
 #define MASTER_LEFT
 // #define MASTER_RIGHT
 // #define EE_HANDS
+//#define USE_MATRIX_I2C
+
+#define QUICK_TAP_TERM 0
+#define TAPPING_TERM 170
 
 #undef RGBLIGHT_LED_COUNT
 #define RGBLIGHT_EFFECT_BREATHING
